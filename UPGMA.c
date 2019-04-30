@@ -50,9 +50,6 @@ float **copierMatCarre(float **matDist, int n){
 	return newM;
 }
 
-
-
-/*Groupe 2 Léon, Guillaume*/
 /***************************************************/
 /*	1. allouer le tableau des neouds
 	2. créer un noeud pour chaque espèce
@@ -97,9 +94,6 @@ Un_noeud *CreerNoeud(char *name, Un_noeud *fils_gauche, Un_noeud *fils_droit, fl
      Allouer et initialiser TOUS les champs*/
 }
 
-
-
-/*Groupe 3 Emile, Shirielle*/
 /***************************************************/
 /* Trouver la distance minimum dans la matrice
 retourner ses indices dans  iMin et  jMin*/
@@ -128,9 +122,6 @@ min = mat[i][j];
 
 }
 
-
-
-/*Groupe 4 Anne-Carmen, Ahmed, Clémence*/
 /***************************************************/
 /*	-Créer un nouvel arbre qui aura comme fils gauche l'arbre d'indice iMin, et comme fils droit, l'arbre d'indice jMin.
 	-iInitialiser les distances distG et distD. On a besoin de nouvel fonction!
@@ -167,8 +158,6 @@ float sommeDist(Un_noeud *A){
 	if(A!=NULL){somme+=sommeDist(A->fils_gauche);return A->distG;}
 	return somme;}
 
-
-/*Groupe 5  Marwa, Emanuel, Irène */
 /***************************************************/
 /*	-Allouer une nouvelle matrice de taille n-1
 	-Recopier les linges et lolonnes sauf iMin et jMin
@@ -234,7 +223,6 @@ int nbFeuilles(Un_noeud *A) {
 	return nbFeuilles(A->fils_gauche) + nbFeuilles(A->fils_droit);
 }
 
-/*Groupe 5  Margot, Hobi, Benjamin, Marc*/
 /***************************************************/
 /* Ecrire l'arbre au format newick */
 
@@ -256,8 +244,6 @@ void affiche_newick(Un_noeud *A){
     }
 }
 
-
-/*Groupe 1, Kenyon et Thomas */
 /***************************************************/
 /*	-prend le tableau des espèces et la matrice des dist, et n = le nb d'espèces
 	-retourne l'arbre
